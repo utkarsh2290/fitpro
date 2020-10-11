@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "280213018556",
+    "firebase_url": "https://fitpro-c48a8.firebaseio.com",
+    "project_id": "fitpro-c48a8",
+    "storage_bucket": "fitpro-c48a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280213018556:android:56810f016e43c939dd3db9",
+        "android_client_info": {
+          "package_name": "com.example.fitpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280213018556-kb3gpv8ipilfsl2eq72imbtpf21gokrp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfXSq-6I1vAxqnHXfMyCzR1mbwwrPZJu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "280213018556-kb3gpv8ipilfsl2eq72imbtpf21gokrp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

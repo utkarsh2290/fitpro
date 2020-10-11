@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fitpro</string>
+    <string name="title_home">Home</string>
+    <string name="title_test">Test</string>
+    <string name="title_appointment">Appointment</string>
+    <string name="title_profile">Profile</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+</resources>

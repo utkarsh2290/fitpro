@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.appointment.AppointmentFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rLayoutPrevApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rLayoutNewButton"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Appointments"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/rLayoutDoc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView4"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ic_edittext_background"
+                android:padding="8dp">
+
+                <Button
+                    android:id="@+id/docTime1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDoc1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/ic_edittext_background"
+                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                    android:text="   12:30 PM" />
+
+                <TextView
+                    android:id="@+id/tvDoc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tcDocName1"
+                    android:layout_centerHorizontal="false"
+                    android:layout_toRightOf="@id/imageViewDoc1"
+                    android:layout_marginLeft="32dp"
+                    android:text="Cardiologist"
+                    android:textColor="#3B3B3B"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tcDocName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imageViewDoc1"
+                    android:layout_marginLeft="32dp"
+                    android:text="Dr. Vandana"
+                    android:textColor="#3B3B3B"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageViewDoc1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/doctor_background"
+                    android:backgroundTint="#6a78e1"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_doc1" />
+
+                <Button
+                    android:id="@+id/buttonRating1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDoc1"
+                    android:layout_marginLeft="32dp"
+                    android:layout_toRightOf="@id/imageViewDoc1"
+                    android:background="@drawable/ic_edittext_background"
+                    android:drawableLeft="@drawable/ic_baseline_star_24"
+                    android:text="5.0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rLayoutDoc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rLayoutDoc1"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ic_edittext_background"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageViewDoc2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/doctor_background"
+                    android:backgroundTint="#6a78e1"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_doc2" />
+
+                <Button
+                    android:id="@+id/docTime2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDoc2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/ic_edittext_background"
+                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                    android:text="   04:30 PM" />
+
+                <TextView
+                    android:id="@+id/tvDoc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDocName2"
+                    android:layout_alignLeft="@id/tvDocName2"
+                    android:layout_centerHorizontal="false"
+                    android:text="Psychotherapist"
+                    android:textColor="#3B3B3B"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvDocName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:layout_marginLeft="32dp"
+                    android:layout_toRightOf="@id/imageViewDoc2"
+                    android:text="Dr. Rohit"
+                    android:textColor="#3B3B3B"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/buttonRating2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDoc2"
+                    android:layout_marginLeft="32dp"
+                    android:layout_toRightOf="@id/imageViewDoc2"
+                    android:background="@drawable/ic_edittext_background"
+                    android:drawableLeft="@drawable/ic_baseline_star_24"
+                    android:text="4.7" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rLayoutDoc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rLayoutDoc2"
+                android:background="@drawable/ic_edittext_background"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imageViewDoc3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/doctor_background"
+                    android:backgroundTint="#6a78e1"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_doc3" />
+
+                <Button
+                    android:id="@+id/docTime3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDoc3"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/ic_edittext_background"
+                    android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                    android:text="   09:30 AM" />
+
+                <TextView
+                    android:id="@+id/tvDoc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDocName3"
+                    android:layout_centerHorizontal="false"
+                    android:layout_marginLeft="32dp"
+                    android:layout_toRightOf="@id/imageViewDoc3"
+                    android:text="Cardiologist"
+                    android:textColor="#3B3B3B"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvDocName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imageViewDoc3"
+                    android:layout_centerHorizontal="false"
+                    android:layout_marginLeft="32dp"
+                    android:text="Dr. Ojha"
+                    android:textColor="#3B3B3B"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/docRating3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvDoc3"
+                    android:layout_marginLeft="32dp"
+                    android:layout_toRightOf="@id/imageViewDoc3"
+                    android:background="@drawable/ic_edittext_background"
+                    android:drawableLeft="@drawable/ic_baseline_star_24"
+                    android:text="3.9" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rLayoutNewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/ic_edittext_background"
+            android:backgroundTint="#23A6B1"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Appointment"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Do you need help? Use FitPro to make a reminder of the appointments you have scheduled. Click on the button below and the app will remind you of your appointment"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btnAppointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ic_edittext_background"
+                android:backgroundTint="#ffffff"
+                android:padding="8dp"
+                android:text="Create"
+                android:textAllCaps="false"
+                android:textColor="#23A6B1" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLoginPage"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="-78dp"
+        app:srcCompat="@drawable/ic_login_page_image" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:text="Sign In"
+        android:textColor="#23A6B1"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSignIn"
+        android:layout_alignLeft="@id/tvSignIn"
+        android:layout_marginTop="8dp"
+        android:text="Welcome Back!"
+        android:textColor="#1F1F1F"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/etUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewLoginPage"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/ic_edittext_background"
+        android:backgroundTint="#D1D0D0"
+        android:ems="10"
+        android:hint="Enter your Email Address"
+        android:inputType="textPersonName|text|textEmailAddress"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:textColorHint="#3B3B3B" />
+
+    <EditText
+        android:id="@+id/etUserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUserEmail"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/ic_edittext_background"
+        android:backgroundTint="#D1D0D0"
+        android:ems="10"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:textColorHint="#3B3B3B" />
+
+    <Button
+        android:id="@+id/btnForgotPasssword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUserPassword"
+        android:layout_alignRight="@id/etUserPassword"
+        android:layout_alignParentRight="false"
+        android:background="@drawable/ic_edittext_background"
+        android:text="@string/forgot_password"
+        android:textAllCaps="false"
+        android:textColor="#23A6B1" />
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnForgotPasssword"
+        android:layout_alignLeft="@id/etUserEmail"
+        android:layout_alignRight="@id/etUserEmail"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_edittext_background"
+        android:backgroundTint="#23A6B1"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogIn"
+        android:layout_alignTop="@id/btnRegister"
+        android:layout_alignBottom="@id/btnRegister"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Not A Member?" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogIn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="64dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="#ffffff"
+        android:gravity="center|left"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#23A6B1" />
+
+</RelativeLayout>

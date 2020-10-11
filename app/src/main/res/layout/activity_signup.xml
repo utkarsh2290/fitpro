@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:id="@+id/imageViewSignUpPage"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="-78dp"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/ic_login_page_image"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="64dp"
+        android:text="Sign Up"
+        android:textColor="#23A6B1"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUserPhone"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/ic_edittext_background"
+        android:backgroundTint="#D1D0D0"
+        android:ems="10"
+        android:hint="Enter your Email Address"
+        android:inputType="textPersonName|text|textEmailAddress"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:textColorHint="#3B3B3B" />
+
+    <EditText
+        android:id="@+id/etUserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUserEmail"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/ic_edittext_background"
+        android:backgroundTint="#D1D0D0"
+        android:ems="10"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:textColorHint="#3B3B3B" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewSignUpPage"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/ic_edittext_background"
+        android:backgroundTint="#D1D0D0"
+        android:ems="10"
+        android:hint="Enter your Name"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:textColorHint="#3B3B3B" />
+
+    <EditText
+        android:id="@+id/etUserAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUserName"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/ic_edittext_background"
+        android:backgroundTint="#D1D0D0"
+        android:ems="10"
+        android:hint="Enter your Age"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:textColorHint="#3B3B3B" />
+
+    <EditText
+        android:id="@+id/etUserPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUserAge"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/ic_edittext_background"
+        android:backgroundTint="#D1D0D0"
+        android:ems="10"
+        android:hint="Enter your Phone Number"
+        android:inputType="phone"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:textColorHint="#3B3B3B" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etUserPassword"
+        android:layout_alignLeft="@id/etUserEmail"
+        android:layout_alignRight="@id/etUserEmail"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_edittext_background"
+        android:backgroundTint="#23A6B1"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRegister"
+        android:layout_alignTop="@id/btnSignIn"
+        android:layout_alignBottom="@id/btnSignIn"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Already A Member?" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRegister"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="48dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="#ffffff"
+        android:gravity="center|left"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#23A6B1" />
+
+</RelativeLayout>
